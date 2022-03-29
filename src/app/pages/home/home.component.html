@@ -1,0 +1,14 @@
+<h1>Home Component</h1>
+<hr>
+
+<h2>{{ nombre }}</h2>
+
+<a class="btn"
+   (click)="cambiarNombre()">
+  Cambiar Nombre
+</a>
+
+<hr>
+
+<app-componente-hijo [nombreHijo]="nombre"
+                     (cambioNombreHijo)="nombre = $event"></app-componente-hijo>
