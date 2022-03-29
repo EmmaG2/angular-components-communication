@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+@import "flex";
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import "buttons";
+
+.content {
+  @include flxAlign(center, center);
+}
+
+.btn {
+  @include button(#4488ee);
+}
