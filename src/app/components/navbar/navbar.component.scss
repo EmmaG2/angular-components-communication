@@ -1,0 +1,28 @@
+@import "mixins/flex";
+@import "mixins/resetList";
+@import "colors";
+
+nav {
+  @include flxAlign(space-around, center);
+  background-color: lightsalmon;
+}
+
+.icon {
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  @include flxAlign(center, center);
+  @include reset-list;
+
+  &__item {
+    padding: 1em 2em;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+}
