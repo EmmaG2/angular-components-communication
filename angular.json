@@ -33,7 +33,13 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/sass",
+                "src/app/sass/mixins"
+              ]
+            }
           },
           "configurations": {
             "production": {
